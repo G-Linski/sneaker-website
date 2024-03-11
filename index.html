@@ -8,13 +8,101 @@
     <meta name="keywords" content ="html, css, web, web development, javascript">
     <link rel = "icon" href ="./assets/img/favicon.png?v=2" type = "/x-icon">
     <title>Sneaker Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/style.css">
     <script src="./assets/script/script.js" defer></script>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class ="landing">
+      <div class ="container flex space-between">
+        <div>
+          <h1>Sneakers</h1>
+        </div>
+        <div class="search">
+          <form>
+            <input type="text" placeholder="Search">
+          </form>
+        </div>
+        <nav>
+          <ul class="nav flex">
+            <li><a href="#sneakers" target="_blank">Sneakers</a></li>
+            <li><a href="#contact" target="_blank">Contact</a></li>
+            <li><a href="#login" target="_blank">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="landing-text-main">
+          <div class="landing-items">
+              <h2 class="landing-title">Some Text Here</h2>
+              <p class="landing-paragraph">More Text Here</p>
+              <a href="#about">
+                <button type="button">See more</button>
+              </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="product-title" id="product">
+          <h2>Products:</h2>
+        </div>
+        <div class="product-container">
+          <div class="product-box product-one">
+            <p>Shoe 1</p>
+            <a href="" target="_blank">
+              <img src="./assets/img/shoe-1.jpg">
+            </a>
+          </div>
+          <div class="product-box product-two">
+            <p>Shoe 2</p>
+            <a href="" target="_blank">
+              <img src="./assets/img/shoe-2.jpg">
+            </a>
+          </div>
+          <div class="product-box product-three">
+            <p>Shoe 3</p>
+            <a href="" target="_blank">
+              <img src="./assets/img/shoe-3.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="divide-line"></div>
+      </section>
+      <section class="container">
+        <div class="contact-title" id="contact">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="contact-container">
+          <p>Text Here
+          </p>
+          <a href="mailto:g_linski@hotmail.com">
+            <button type="button">Email us</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container flex space-between">
+        <div>
+          <ul class="footer-socialmedia">
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer-copyright">
+            <li>&#169;2024 by Olisa, JJ, Clinton, Gabe</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
