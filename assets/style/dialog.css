@@ -1,6 +1,33 @@
 @charset 'utf-8';
 
+/* testing */
+dialog,
 .dialog {
     width: 40%;
+    height: 400px;
     background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop,
+.dialog::after {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(70, 70, 70);
+    transition: all 0.25s ease-in-out;
+}
+
+.dialog {
+    transition: all 0.25s ease-in-out;
+    display: none;
+
+    &.open {
+        display: block;
+    }
 }
