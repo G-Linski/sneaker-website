@@ -6,7 +6,7 @@ dialog,
     width: 40%;
     height: 400px;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -19,7 +19,7 @@ dialog::backdrop,
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background: rgb(70, 70, 70);
+    background: rgba(70, 70, 70, .4);
     transition: all 0.25s ease-in-out;
 }
 

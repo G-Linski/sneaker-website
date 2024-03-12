@@ -6,8 +6,7 @@ const dialog = query(dialogContainer);
 
 event(document, 'click', (evt) => {
     //Temp testing
-    if (evt.pageX < 800)
-        return;
+    if (evt.pageX < 800) return;
     if (dialog.open)
         dialog.close();
     else
