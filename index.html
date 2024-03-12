@@ -104,5 +104,33 @@
         </div>
       </div>
     </footer>
+    <!-- Dialog testing -->
+    <!-- 
+      <dialog class="">
+        <h2>Sign in</h2>
+        <form method="dialog">
+          <label>Email</label>
+          <input type="text" placeholder="">
+          <label>Password*</label>
+          <input type="text" placeholder="">
+          <a href="#">Forgot password?</a>
+          <input type="button" value="Sign in">
+        </form>
+      </dialog> 
+    -->
+    <div class="dialog">
+      <h2>Sign in</h2>
+      <form name="signin" method="dialog">
+        <label>Email</label>
+        <input name="email" type="email" placeholder="Email" maxlength="50" required
+            title="Email is required" pattern="^(?=^.{8,}$)[\-_A-Za-z0-9]+([\.\-_][a-zA-Z0-9]+)*@[A-Za-z0-9]+([\.\-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
+        <label>Password*</label>
+        <input name="password" type="password">
+        <a href="#">Forgot password?</a>
+        <input type="button" value="Sign in">
+      </form>
+    </div>
+    <link rel="stylesheet" href="./assets/style/dialog.css">
+    <script src="./assets/script/dialog.js"></script>
   </body>
 </html>
