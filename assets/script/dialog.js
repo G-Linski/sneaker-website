@@ -22,6 +22,11 @@ event(login, 'click', () => toggleDialog());
 const signin = query('input[type="button"]');
 const email = query('input[type="email"]');
 const password = query('input[type="password"]');
+const form = query('form[name="signin"]');
+form.addEventListener("submit",()=>{
+    toggleDialog();
+    console.log("to be validated manually before submitting the form");
+});
 
 createOverlay();
 // toggleDialog();
