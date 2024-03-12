@@ -2,10 +2,76 @@
 
 
 /*----------------------------------*/
-/*             Login                */
+/*             Main Product         */
 /*----------------------------------*/
 
 
+
+
+.detail-container {
+  display:flex;
+  justify-content: space-between;
+  height: 450px;
+}
+
+.detail-picture { 
+  width: 45%;
+  height:450px;
+  width: fit-content;
+
+
+}
+
+.detail-description { 
+  width: 45%;
+  height: 450px;
+
+  border: 1px solid #000000;
+}
+
+.detail-picture img {
+  height: 450px;
+  border-radius: 5px;
+
+}
+
+
+/*----------------------------------*/
+/*          Related Products        */
+/*----------------------------------*/
+
+.related-container {
+  display:flex;
+  justify-content: space-between;
+  height: 300px
+}
+
+.related-picture { 
+  width: 150x;
+  height:100px;
+}
+
+.related-description {
+  height: 150px;
+}
+
+.related-name { 
+  width: 150x;
+  height: 150px;
+  border: 1px solid #000000;
+}
+
+.related-price { 
+  width: 150x;
+  height:100px;
+  border: 1px solid #000000;
+}
+
+
+.related-picture img {
+  width: 150x;
+  height: 100px;
+}
 
 
 

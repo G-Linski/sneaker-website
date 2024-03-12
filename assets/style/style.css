@@ -5,11 +5,11 @@
   /* --background-dark: rgb(24,23,32); */
   --background-main: #f8f8f8;
   --background-sub: #ffffff;
-  --font-text-main: #191821;
-  --font-text-sub: #191821;
-  --text-size-large:30px;
-  --text-size-medium:24px;
-  --text-size-small:18px;
+  --font-color-main: #191821;
+  --font-color-sub: #191821;
+  --font-size-large:30px;
+  --font-size-medium:24px;
+  --font-size-small:18px;
 
 }
 
@@ -28,11 +28,11 @@ body {
 }
 
 h1, h2, p ,li {
-  color: var(--font-text-main);
+  color: var(--font-color-main);
 }
 
 h2 {
-  font-size: 30px;
+  font-size: var(--font-size-large)
 }
 
 p {
@@ -40,7 +40,7 @@ p {
 }
 
 .divide-line {
-  background-color: var(--font-text-main);
+  background-color: var(--font-color-main);
   height: 3px;
   width: 100%;
   margin: 100px 0;
@@ -67,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--font-text-main);
+  color: var(--font-color-main);
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
@@ -161,7 +161,7 @@ input[type=text]:focus {
 .landing-title {
   justify-content: left;
   font-size: 60px;
-  color: var(--font-text-main);
+  color: var(--font-color-main);
   font-weight: 500;
 }
 
@@ -170,12 +170,12 @@ input[type=text]:focus {
 }
 
 .landing-paragraph{
-  color: var(--font-text-main);
+  color: var(--font-color-main);
   font-size: 20px;
 }
 
 .landing-paragraph-sub{
-  color: var(--font-text-sub);
+  color: var(--font-color-sub);
 }
 
 button {
@@ -241,7 +241,7 @@ a:link, a:visited {
 
 footer {
   background-color:#e7e6ec;
-  color: var(--font-text-main);
+  color: var(--font-color-main);
   height: 60px;
   font-weight: 600;
   display: flex;
@@ -258,7 +258,7 @@ footer {
 
 .footer-socialmedia {
   font-size: 20px;
-  color: var(--font-text-main);
+  color: var(--font-color-main);
   line-height: 60px;
   list-style: none;
   gap: 20px;
@@ -269,7 +269,7 @@ footer ul li a {
   text-decoration: none;
   cursor: default;
   transition: color 0.25s ease-in-out;
-  color: var(--font-text-main);
+  color: var(--font-color-main);
 }
 
 footer ul li a:hover {
