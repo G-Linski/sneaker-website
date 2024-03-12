@@ -97,7 +97,7 @@ nav ul li a:hover {
   border: 1px solid rgb(255 255 255 /0.30);
 }
 
-input {
+.search-input {
   color: black;
   transition: all 0.25s ease-in-out;
   height: 40px;
@@ -107,7 +107,7 @@ input {
   border: 1px solid rgb(255 255 255 /0.30);
 }
 
-input[type=text] {
+.search-input[type=text] {
   width: 200px;
   height: 40px;
   line-height: 60px;
