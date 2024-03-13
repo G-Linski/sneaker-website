@@ -311,6 +311,30 @@ a:link, a:visited {
   border-radius: 5px;
 }
 
+.best-offer {
+  background-color: rgb(131 131 131 / 0.025);
+}
+
+.best-offer-column-small {
+  place-items: center;
+  flex: 0 0 calc(30% - 15px);
+  max-width: calc(30% - 15px);
+}
+
+.best-offer-column-big {
+  flex: 0 0 calc(70% - 15px);
+  max-width: calc(70% - 15px);
+  height: 400px;
+}
+
+.about-column-image {
+  background: url('../img/about-section-image.png') center / cover no-repeat;
+}
+
+.digital-wallet {
+  background: url('../img/wallet.png') center / cover no-repeat;
+}
+
 
 /*------------------------------------------*/
 /*               Contact                    */
