@@ -325,7 +325,8 @@ button:hover {
   border-radius: 5px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.25s ease-in-out;
-  overflow: hidden;
+  perspective: 1000px;
+  background-color: #efefef;
 }
 
 .product-box p {
@@ -337,10 +338,35 @@ button:hover {
   text-align: center;
 }
 
-.product-box img {
-  width: 550px;
+.product-box .more {
   position: absolute;
-  bottom: 15%;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  bottom: 10%;
+  left: 0;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.product-box img {
+  width: 80%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  bottom: 0;
+  z-index: 10;
+  transform-origin: bottom left;
+  transition: all 0.25s ease-in-out;
+}
+
+.product-box:hover {
+  img {
+    width: 150%;
+    transform: rotateZ(-45deg) translate3d(0,0,0);
+  }
 }
 
 .product-one:hover {
