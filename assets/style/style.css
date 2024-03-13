@@ -100,6 +100,10 @@ h1 {
   font-size: var(--font-size-large);
 }
 
+.header-bar{
+  display: flex;
+}
+
 nav ul {
   gap: 20px;
 }
@@ -657,14 +661,34 @@ footer button {
 
 
 @media(max-width: 768px) {
+
+  /* Header */
+
   .nav {
     translate: -1000%;
     display: none;
   }
 
+  .header-bar {
+    display: inline-block;
+  }
+
+  .search {
+    justify-content: start;
+  }
+
   h1 {
     font-size: 40px;
   }
+
+
+/* Banner */
+
+.lan
+
+
+
+
 
   .project-box {
     flex: 0 0 calc(50% - 10px);
