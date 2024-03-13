@@ -677,6 +677,10 @@ footer button {
     justify-content: start;
   }
 
+  .search-input[type=text] {
+    width: 100%;
+  }
+
   h1 {
     font-size: 40px;
   }
@@ -684,11 +688,9 @@ footer button {
 
 /* Banner */
 
-.lan
-
-
-
-
+.landing {
+  height: 700px;
+}
 
   .project-box {
     flex: 0 0 calc(50% - 10px);
@@ -718,6 +720,12 @@ footer button {
 }
 
 @media(max-width: 480px) {
+
+
+
+  .landing {
+    height: 600px;
+  }
 
   .project-box {
     flex: 0 0 calc(100%);
