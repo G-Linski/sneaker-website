@@ -9,7 +9,12 @@
   --font-color-sub: #191821;
   --font-size-large:30px;
   --font-size-medium:24px;
-  --font-size-small:18px;
+  --font-size-small:20px;
+  --button-color: #0f00ab;
+  --button-hover-color: #0047ab;
+  --button-font: #ffffff;
+
+
 
 }
 
@@ -36,7 +41,7 @@ h2 {
 }
 
 p {
-  font-size: 18px;
+  font-size: var(--font-size-small)
 }
 
 /*------------------------------------*/
@@ -58,8 +63,8 @@ p {
   height: 44px;
   width: 180px;
   line-height: 44px;
-  color: #fff;
-  background-color: #0f00ab;
+  color: var(--button-font);
+  background-color: var(--button-color);
   text-align: center;
   font-weight: 700;
   cursor: pointer;
@@ -69,7 +74,7 @@ p {
 }
 
 .button:hover {
-  background-color: #0047ab;
+  background-color: var(--button-hover-color);
 }
 
 .form-button {
@@ -82,7 +87,7 @@ p {
 
 .contact-section {
   background-color: #000072;
-  color: #fff;
+  color: var(--button-font);
 }
 
 /*----------------------------------*/
@@ -92,7 +97,7 @@ p {
 h1 {
   text-align: left;
   line-height: 60px;
-  font-size: 32px;
+  font-size: var(--font-size-large);
 }
 
 nav ul {
@@ -107,7 +112,7 @@ nav ul li {
 nav ul li a {
   color: var(--font-color-main);
   font-weight: 500;
-  font-size: 20px;
+  font-size: var(--font-size-small);
   text-decoration: none;
   cursor: pointer;
   transition: color 0.25s ease-in-out;
@@ -131,8 +136,9 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: end;
-  color: grey;
+  color: #808080;
   border: 1px solid rgb(255 255 255 /0.30);
+
 }
 
 .search-input {
@@ -143,20 +149,22 @@ nav ul li a:hover {
   border-radius: 50px;
   z-index: 1;
   border: 1px solid rgb(255 255 255 /0.30);
+
 }
 
 .search-input[type=text] {
-  width: 200px;
+  width: 250px;
   height: 40px;
   line-height: 60px;
   border-radius: 50px;
   font-size: 20px;
   font-weight: 500;
   color: black;;
-  padding: 0 0 0 50px; 
+  padding: 0 0 0 60px; 
   transition: all 0.25s ease-in-out;
   background: rgba(0, 0, 0, 0.1) url(../img/search-icon.png) no-repeat 10% 7px;
   border: 1px solid rgb(255 255 255 /0.30);
+
 }
 
 ::placeholder {
@@ -174,7 +182,7 @@ input[type=text]:focus {
 /*----------------------------------*/
 
 .landing {
-  background: transparent url(../img/bg1.jpg) no-repeat center center/cover;
+  background: transparent url(../img/bg1-a.jpg) no-repeat center center/cover;
   background-color: var(--background-color);
   background-size: cover;
   background-position: center;
@@ -209,7 +217,7 @@ input[type=text]:focus {
 
 .landing-paragraph {
   color: var(--font-color-main);
-  font-size: 20px;
+  font-size: var(--font-size-small);
 }
 
 .landing-paragraph-sub {
@@ -218,10 +226,10 @@ input[type=text]:focus {
 
 button {
   height: 40px;
-  font-size: 20px;
+  font-size:  var(--font-size-small);
   color: var(--font-text-main);
-  border: 1px solid #0047ab;
-  background-color: #0047ab;
+  border: 1px solid var(--button-color);
+  background-color: var(--button-color);
   padding: 5px 30px;
   cursor: pointer;
   border-radius: 5px;
@@ -231,7 +239,8 @@ button {
 }
 
 button:hover {
-  background-color: #00275f;
+  background-color: var(--button-color);
+  /* background-color: #00275f; */
 }
 
 a:link, a:visited {
@@ -336,8 +345,8 @@ button {
   height: 40px;
   font-size: 20px;
   color: var(--font-text-main);
-  border: 1px solid #0047ab;
-  background-color: #0047ab;
+  border: 1px solid var(--button-color);
+  background-color: var(--button-color);
   padding: 5px 30px;
   cursor: pointer;
   border-radius: 10px;
@@ -347,7 +356,7 @@ button {
 }
 
 button:hover {
-  background-color: #00275f;
+  background-color: var(--button-hover-color);
 }
 
 /*------------------------------------------*/
@@ -436,12 +445,12 @@ section {
 .contact-info {
   h2 {
   width:100%;
-  color: #fff;
+  color: var(--font-color-main);
   }
 
   p {
     width:50%;
-    color: #fff;
+    color: var(--font-color-main);
   }
 }
 
@@ -566,7 +575,8 @@ footer button {
 }*/
 .site-footer {
   background-color: #090909;
-  color: #f0f0f0;
+  /* color: #f0f0f0; */
+  color: var(--font-color-main);
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -590,7 +600,7 @@ footer button {
 }
 
 .footer-section ul li a {
-  color: #fff;
+  color: var(--font-color-main);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -627,8 +637,8 @@ footer button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--button-color);
+  color: var(--button-font);
   cursor: pointer;
 }
 
