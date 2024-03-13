@@ -320,17 +320,39 @@ button:hover {
   max-width:calc(33.3333333% - 20px);
   flex: 0 0 calc(33.3333333% - 20px);
   width: fit-content;
-  height: fit-content;
+  height: 450px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
 }
 
 .product-box p {
   position: absolute;
-
+  top: 10%;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .product-box img {
-  width: 350px;
-  border-radius: 5px;
+  width: 550px;
+  position: absolute;
+  bottom: 15%;
+}
+
+.product-one:hover {
+  background-color: #ecbde9;
+}
+
+.product-two:hover {
+  background-color: #86bedf;
+}
+
+.product-three:hover {
+  background-color: #b3e140;
 }
 
 .best-offer {
