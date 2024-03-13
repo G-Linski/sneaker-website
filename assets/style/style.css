@@ -9,7 +9,12 @@
   --font-color-sub: #191821;
   --font-size-large:30px;
   --font-size-medium:24px;
-  --font-size-small:18px;
+  --font-size-small:20px;
+  --button-color: #0f00ab;
+  --button-hover-color: #0047ab;
+  --button-font: #ffffff;
+
+
 
 }
 
@@ -27,24 +32,62 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, p ,li {
+h1, h2, p, li, a {
   color: var(--font-color-main);
 }
 
 h2 {
-  font-size: var(--font-size-large)
+  font-size: var(--font-size-large);
 }
 
 p {
-  font-size: 18px;
+  font-size: var(--font-size-small)
 }
 
-.divide-line {
-  background-color: var(--font-color-main);
-  height: 3px;
-  width: 100%;
-  margin: 100px 0;
-  border-radius: 5px;
+/*------------------------------------*/
+/*        Olisa Button                */
+/*------------------------------------*/
+
+.row {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.column {
+  height: 400px;
+  border-radius: 15px;
+}
+
+.button {
+  display: block;
+  height: 44px;
+  width: 180px;
+  line-height: 44px;
+  color: var(--button-font);
+  background-color: var(--button-color);
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.form-button {
+  width: 40%;
+}
+
+/*----------------------------------*/
+/*  Olisa Contact Section           */
+/*----------------------------------*/
+
+.contact-section {
+  background-color: #000072;
+  color: var(--button-font);
 }
 
 /*----------------------------------*/
@@ -54,7 +97,11 @@ p {
 h1 {
   text-align: left;
   line-height: 60px;
-  font-size: 32px;
+  font-size: var(--font-size-large);
+}
+
+.header-bar{
+  display: flex;
 }
 
 nav ul {
@@ -69,9 +116,9 @@ nav ul li {
 nav ul li a {
   color: var(--font-color-main);
   font-weight: 500;
-  font-size: 20px;
+  font-size: var(--font-size-small);
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
   transition: color 0.25s ease-in-out;
 }
 
@@ -93,8 +140,9 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: end;
-  color: grey;
+  color: #808080;
   border: 1px solid rgb(255 255 255 /0.30);
+
 }
 
 .search-input {
@@ -105,20 +153,22 @@ nav ul li a:hover {
   border-radius: 50px;
   z-index: 1;
   border: 1px solid rgb(255 255 255 /0.30);
+
 }
 
 .search-input[type=text] {
-  width: 200px;
+  width: 250px;
   height: 40px;
   line-height: 60px;
   border-radius: 50px;
   font-size: 20px;
   font-weight: 500;
   color: black;;
-  padding: 0 0 0 50px; 
+  padding: 0 0 0 60px; 
   transition: all 0.25s ease-in-out;
   background: rgba(0, 0, 0, 0.1) url(../img/search-icon.png) no-repeat 10% 7px;
   border: 1px solid rgb(255 255 255 /0.30);
+
 }
 
 ::placeholder {
@@ -136,7 +186,7 @@ input[type=text]:focus {
 /*----------------------------------*/
 
 .landing {
-  background: transparent url(../img/bg1.jpg) no-repeat center center/cover;
+  background: transparent url(../img/bg1-a.jpg) no-repeat center center/cover;
   background-color: var(--background-color);
   background-size: cover;
   background-position: center;
@@ -169,21 +219,21 @@ input[type=text]:focus {
   margin: 20px 0;
 }
 
-.landing-paragraph{
+.landing-paragraph {
   color: var(--font-color-main);
-  font-size: 20px;
+  font-size: var(--font-size-small);
 }
 
-.landing-paragraph-sub{
+.landing-paragraph-sub {
   color: var(--font-color-sub);
 }
 
 button {
   height: 40px;
-  font-size: 20px;
+  font-size:  var(--font-size-small);
   color: var(--font-text-main);
-  border: 1px solid #0047ab;
-  background-color: #0047ab;
+  border: 1px solid var(--button-color);
+  background-color: var(--button-color);
   padding: 5px 30px;
   cursor: pointer;
   border-radius: 5px;
@@ -193,7 +243,8 @@ button {
 }
 
 button:hover {
-  background-color: #00275f;
+  background-color: var(--button-color);
+  /* background-color: #00275f; */
 }
 
 a:link, a:visited {
@@ -223,8 +274,8 @@ a:link, a:visited {
 }
 
 .dialog {
-  width: max(30%, 420px);
-  border-radius: 40px;
+  width: 380px;
+  border-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -245,7 +296,7 @@ a:link, a:visited {
   }
 
   h2 {
-      margin-bottom: 10px;
+      margin-bottom: 40px;
   }
 
   label {
@@ -254,7 +305,9 @@ a:link, a:visited {
   }
 
   p {
-      margin: 5px 2px;
+      margin: 20px 0;
+      font-size: 10px;
+      text-align: right;
   }
 
   a {
@@ -273,35 +326,50 @@ a:link, a:visited {
   }
 
   input[type=submit] {
-      width: 40%;
+      width: 100%;
+      background-color: #0047ab;
+      color: #fff;
+      margin: 20px 0 70px;
+      border-radius: 10px;
+      font-weight: 700;
   }
 
   ::placeholder {
-      color: #ccc;
+      color: #fff;
   }
+}
+
+.dialog .forgot {
+  color: #0047ab;
+  font-size: 16px;
+  margin: 40px 0;
 }
 
 button {
   height: 40px;
   font-size: 20px;
   color: var(--font-text-main);
-  border: 1px solid #0047ab;
-  background-color: #0047ab;
+  border: 1px solid var(--button-color);
+  background-color: var(--button-color);
   padding: 5px 30px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: .4s ease;
   margin-top: 10px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-  background-color: #00275f;
+  background-color: var(--button-hover-color);
 }
 
 /*------------------------------------------*/
 /*              Products                    */
 /*------------------------------------------*/
+
+section {
+  padding: 50px 0;
+}
 
 .product-container {
   display: flex;
@@ -428,6 +496,10 @@ button:hover {
   background: url('../img/wallet.png') center / cover no-repeat;
 }
 
+.best-offer-column-small p {
+  padding: 20px 0 30px;
+}
+
 
 /*------------------------------------------*/
 /*               Contact                    */
@@ -452,11 +524,12 @@ button:hover {
 .contact-info {
   h2 {
   width:100%;
+  color: var(--font-color-main);
   }
 
   p {
     width:50%;
-    color: #666;
+    color: var(--font-color-main);
   }
 }
 
@@ -581,7 +654,8 @@ footer button {
 }*/
 .site-footer {
   background-color: #090909;
-  color: #f0f0f0;
+  /* color: #f0f0f0; */
+  color: var(--font-color-main);
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -605,7 +679,7 @@ footer button {
 }
 
 .footer-section ul li a {
-  color: #fff;
+  color: var(--font-color-main);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -642,8 +716,8 @@ footer button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--button-color);
+  color: var(--button-font);
   cursor: pointer;
 }
 
@@ -662,14 +736,36 @@ footer button {
 
 
 @media(max-width: 768px) {
+
+  /* Header */
+
   .nav {
     translate: -1000%;
     display: none;
   }
 
+  .header-bar {
+    display: inline-block;
+  }
+
+  .search {
+    justify-content: start;
+  }
+
+  .search-input[type=text] {
+    width: 100%;
+  }
+
   h1 {
     font-size: 40px;
   }
+
+
+/* Banner */
+
+.landing {
+  height: 700px;
+}
 
   .project-box {
     flex: 0 0 calc(50% - 10px);
@@ -699,6 +795,12 @@ footer button {
 }
 
 @media(max-width: 480px) {
+
+
+
+  .landing {
+    height: 600px;
+  }
 
   .project-box {
     flex: 0 0 calc(100%);
