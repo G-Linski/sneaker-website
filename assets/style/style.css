@@ -323,9 +323,13 @@ button:hover {
   height: fit-content;
 }
 
+.product-box p {
+  position: absolute;
+
+}
+
 .product-box img {
   width: 350px;
-  height: 350px;
   border-radius: 5px;
 }
 
