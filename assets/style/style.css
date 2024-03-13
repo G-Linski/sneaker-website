@@ -312,7 +312,8 @@ button:hover {
 }
 
 .product-title {
-  margin: 20px 0;
+  margin: 20px 0 60px 0;
+  text-align: center;
 }
 
 .product-box {
@@ -339,19 +340,6 @@ button:hover {
   transition: all 0.25s ease-in-out;
 }
 
-.product-box .more {
-  position: absolute;
-  color: #fff;
-  border-radius: 5px;
-  transform: translate(-50%,-50%) rotateZ(-45deg);
-  top: 40%;
-  left: 40%;
-  width: 100%;
-  padding: 20px;
-  font-size: 60px;
-  font-weight: 500;
-}
-
 .product-box img {
   width: 80%;
   position: absolute;
@@ -375,6 +363,27 @@ button:hover {
     font-weight: 800;
     font-size: 40px;
     transform: rotateZ(-45deg);
+  }
+  span {
+    color: #fff;
+  }
+}
+
+.product-one {
+  span {
+    color: #ecbde9;
+  }
+}
+
+.product-two {
+  span {
+    color: #86bedf;
+  }
+}
+
+.product-three {
+  span {
+    color: #b3e140;
   }
 }
 
