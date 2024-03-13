@@ -314,6 +314,10 @@ button:hover {
 .product-title {
   margin: 20px 0 60px 0;
   text-align: center;
+
+  span {
+    color: #007bff;
+  }
 }
 
 .product-box {
