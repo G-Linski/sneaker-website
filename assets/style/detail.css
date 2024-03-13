@@ -75,6 +75,46 @@
 
 
 
+/*----------------------------------*/
+/*        Products on demand        */
+/*----------------------------------*/
+
+.row {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.column {
+  height: 400px;
+  border-radius: 15px;
+}
+
+.products-demand {
+  margin-top: 80px;
+}
+
+.demand-column {
+  flex: 0 0 calc(25% - 22.5px);
+  max-width: calc(25% - 22.5px);
+  box-shadow: 1px;
+}
+
+.demand-1 {
+  background: url('../img/demand-1.png') center / cover no-repeat;
+}
+
+.demand-2 {
+  background: url('../img/demand-2.png') center / cover no-repeat;
+}
+
+.demand-3 {
+  background: url('../img/demand-3.png') center / cover no-repeat;
+}
+
+.demand-4 {
+  background: url('../img/demand-4.png') center / cover no-repeat;
+}
+
 
 
 
