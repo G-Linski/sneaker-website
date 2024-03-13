@@ -281,6 +281,24 @@ a:link, a:visited {
   }
 }
 
+button {
+  height: 40px;
+  font-size: 20px;
+  color: var(--font-text-main);
+  border: 1px solid #0047ab;
+  background-color: #0047ab;
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .4s ease;
+  margin-top: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #00275f;
+}
+
 /*------------------------------------------*/
 /*              Products                    */
 /*------------------------------------------*/
@@ -309,6 +327,30 @@ a:link, a:visited {
   width: 350px;
   height: 350px;
   border-radius: 5px;
+}
+
+.best-offer {
+  background-color: rgb(131 131 131 / 0.025);
+}
+
+.best-offer-column-small {
+  place-items: center;
+  flex: 0 0 calc(30% - 15px);
+  max-width: calc(30% - 15px);
+}
+
+.best-offer-column-big {
+  flex: 0 0 calc(70% - 15px);
+  max-width: calc(70% - 15px);
+  height: 400px;
+}
+
+.about-column-image {
+  background: url('../img/about-section-image.png') center / cover no-repeat;
+}
+
+.digital-wallet {
+  background: url('../img/wallet.png') center / cover no-repeat;
 }
 
 
