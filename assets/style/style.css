@@ -308,6 +308,7 @@ button:hover {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+  perspective: 200px;
 }
 
 .product-title {
@@ -325,7 +326,6 @@ button:hover {
   border-radius: 5px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.25s ease-in-out;
-  perspective: 1000px;
   background-color: #efefef;
 }
 
@@ -336,19 +336,20 @@ button:hover {
   font-size: 30px;
   font-weight: 500;
   text-align: center;
+  transition: all 0.25s ease-in-out;
 }
 
 .product-box .more {
   position: absolute;
   color: #fff;
-  background-color: #007bff;
   border-radius: 5px;
-  bottom: 10%;
-  left: 0;
+  transform: translate(-50%,-50%) rotateZ(-45deg);
+  top: 40%;
+  left: 40%;
+  width: 100%;
   padding: 20px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
-  z-index: 10;
 }
 
 .product-box img {
@@ -363,9 +364,17 @@ button:hover {
 }
 
 .product-box:hover {
+  transform: translateZ(2px);
+  z-index: 10;
   img {
     width: 150%;
-    transform: rotateZ(-45deg) translate3d(0,0,0);
+    transform: translate(-20%,0) rotateZ(-45deg);
+  }
+  p {
+    color: #fff;
+    font-weight: 800;
+    font-size: 40px;
+    transform: rotateZ(-45deg);
   }
 }
 
@@ -374,6 +383,7 @@ button:hover {
 }
 
 .product-two:hover {
+  transform: translateZ(2px);
   background-color: #86bedf;
 }
 
