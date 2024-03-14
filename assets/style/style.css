@@ -90,6 +90,7 @@ p {
 .contact-section {
   background-color: #000072;
   color: var(--button-font);
+  height: 100%;
 }
 
 /*----------------------------------*/
@@ -129,7 +130,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #0f00ab;
+  color: var(--button-color);
 }
 
 .header-nav {
@@ -184,7 +185,6 @@ span {
   background: rgb(0 0 0 / 0.05) url(../img/search-icon.png) no-repeat 20px 9px;
   background-size: 18px;
   border: 1px solid rgb(255 255 255 /0.30);
-
 }
 
 ::placeholder {
@@ -210,6 +210,7 @@ span {
   background-size: cover;
   background-position: center;
   z-index: -1;
+  height: 100dvh;
 }
 
 .landing-text-main {
@@ -231,7 +232,7 @@ span {
   justify-content: left;
   font-size: 60px;
   color: var(--font-color-main);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .landing-items p {
@@ -241,6 +242,7 @@ span {
 .landing-paragraph {
   color: var(--font-color-main);
   font-size: var(--font-size-small);
+  padding: 10px 0 30px;
 }
 
 .landing-paragraph-sub {
@@ -346,8 +348,7 @@ a:link, a:visited {
 
   input[type=submit] {
       width: 100%;
-      background-color: #0f00ab;
-      background-color: var(--button-hover-color);
+      background-color: var(--button-color);
       color: #fff;
       margin: 10px 0;
       border-radius: 10px;
@@ -388,7 +389,7 @@ button:hover {
 /*------------------------------------------*/
 
 section {
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .product-container {
@@ -400,7 +401,7 @@ section {
 }
 
 .product-title {
-  margin: 20px 0 60px 0;
+  padding-bottom: 40px;
   text-align: center;
 
   span {
@@ -417,9 +418,9 @@ section {
   height: 450px;
   position: relative;
   border-radius: 5px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgb(239 239 239 / 0.5);
   transition: all 0.25s ease-in-out;
-  background-color: #efefef;
+  background-color: rgb(239 239 239 / 0.3);
 }
 
 .product-box p {
@@ -580,7 +581,6 @@ section {
 
 .contact-container {
   display: flex;
-  justify-content: space-around;
 }
 
 .contact-box {
@@ -589,7 +589,7 @@ section {
 }
 
 .contact-info {
-  width: 350px;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -597,7 +597,6 @@ section {
 
 .contact-info {
   h2 {
-  width:100%;
   padding-bottom: 20px;
   color: #fff;
   }
@@ -610,7 +609,6 @@ section {
 
 .icon-plus-text {
   display: flex;
-  width: 100%;
   line-height: 24px;
   font-size: var(--font-size-medium);
   gap: 20px;
@@ -663,7 +661,7 @@ section {
   }
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 1px solid #0047ab;
 }
 
@@ -747,7 +745,7 @@ footer ul li a:hover {
   }
 
   .header-bar {
-    display: inline-block;
+    display: block;
   }
 
   .search {
@@ -797,11 +795,6 @@ footer ul li a:hover {
 
 
   /* Wallet and About Section */
-
-  .best-offer-row {
-    display: inline-block;
-    flex-wrap: none;
-  }
   
   .best-offer-column-big {
     flex: 0 0 calc(100%);
@@ -809,6 +802,7 @@ footer ul li a:hover {
   }
 
   .best-offer-column-small {
+    text-align: center;
     flex: 0 0 calc(100%);
     max-width: 100%;
   }
@@ -880,6 +874,23 @@ footer ul li a:hover {
 
 .center {
   align-content: center;
+}
+
+/*------------------------------------------*/
+/*   Responsiveness Contact                  */
+/*------------------------------------------*/
+
+@media(max-width: 480px) {
+  .contact-info {
+    flex: 0 0 calc(100%);
+    width: 100%;
+  }
+
+  .contact-form {
+    flex: 0 0 calc(100%);
+    width: 100%;
+  }
+
 }
 
 /*------------------------------------------*/
