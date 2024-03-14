@@ -91,7 +91,8 @@
   }
   P {
     position: relative;
-    bottom:18%;
+    bottom:20%;
+    font-weight: 600;
   }
 
 
@@ -125,7 +126,6 @@
 
 .demand-1 {
   background: url('../img/demand-1.png') center / cover no-repeat;
-  
 }
 
 .demand-2 {
@@ -150,6 +150,76 @@
     width: 60%;
   }
 }
+
+/*----------------------------------*/
+/*        Responsiveness            */
+/*----------------------------------*/
+
+@media (max-width: 600px) {
+  .demand-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

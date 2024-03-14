@@ -59,6 +59,7 @@ p {
 }
 
 .button {
+  background-color: var(--button-color);
   display: block;
   height: 44px;
   width: 180px;
@@ -80,7 +81,9 @@ p {
 .form-button {
   width: 100%;
   margin: 30px 7px 20px;
+  background-color: var(--button-color);
 }
+
 
 /*----------------------------------*/
 /*  Olisa Contact Section           */
@@ -90,6 +93,7 @@ p {
   background-color: rgb(169 169 169);
   color: var(--button-font);
 }
+
 
 /*----------------------------------*/
 /*             Header               */
@@ -586,6 +590,13 @@ section {
 /*               Contact                    */
 /*------------------------------------------*/
 
+
+.contact-section {
+  background-color: #000072;
+  color: var(--button-font);
+  height: 100%;
+}
+
 .contact-container {
   display: flex;
 }
@@ -655,7 +666,7 @@ section {
     background-color: #f3f5f7;
   }
 
-  input {
+  input:not([type=submit]) {
     font-size: 1.6rem;
     font-weight: 400;
     height: 4.8rem;
@@ -845,9 +856,30 @@ footer ul li a:hover {
     position: relative;
     left: 25%;
   }
+  
   .landing {
     background: transparent url(../img/bg1-mobile.jpg) no-repeat center center/cover;
   }
+
+  .contact-info {
+    flex: 0 0 calc(100%);
+    width: 100%;
+  }
+
+  .contact-box {
+    height: auto;
+    flex: 0 0 calc(100%);
+    width: 50%;
+    margin-bottom: 1000px;
+  }
+
+  .contact-form {
+    flex: 0 0 calc(100%);
+    width: 100%;
+    height: auto;
+  }
+
+
 
 }
 
@@ -855,6 +887,7 @@ footer ul li a:hover {
 @media (max-width: 600px) {
   .contact-container {
     flex-direction: column;
+    height: auto;
   }
 
   .contact-form {
@@ -896,4 +929,11 @@ footer ul li a:hover {
 /*------------------------------------------*/
 /*   Responsiveness Contact                  */
 /*------------------------------------------*/
+
+
+@media(max-width: 480px) {
+
+
+}
+
 
