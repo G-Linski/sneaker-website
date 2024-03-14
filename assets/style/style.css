@@ -851,9 +851,30 @@ footer ul li a:hover {
     position: relative;
     left: 25%;
   }
+  
   .landing {
     background: transparent url(../img/bg1-mobile.jpg) no-repeat center center/cover;
   }
+
+  .contact-info {
+    flex: 0 0 calc(100%);
+    width: 100%;
+  }
+
+  .contact-box {
+    height: auto;
+    flex: 0 0 calc(100%);
+    width: 50%;
+    margin-bottom: 1000px;
+  }
+
+  .contact-form {
+    flex: 0 0 calc(100%);
+    width: 100%;
+    height: auto;
+  }
+
+
 
 }
 
@@ -861,6 +882,7 @@ footer ul li a:hover {
 @media (max-width: 600px) {
   .contact-container {
     flex-direction: column;
+    height: auto;
   }
 
   .contact-form {
@@ -900,16 +922,7 @@ footer ul li a:hover {
 /*------------------------------------------*/
 
 @media(max-width: 480px) {
-  .contact-info {
-    flex: 0 0 calc(100%);
-    width: 100%;
-  }
 
-  .contact-form {
-    flex: 0 0 calc(100%);
-    width: 100%;
- 
-  }
 
 }
 
