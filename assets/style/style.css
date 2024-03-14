@@ -59,7 +59,6 @@ p {
 }
 
 .button {
-  background-color: var(--button-color);
   display: block;
   height: 44px;
   width: 180px;
@@ -81,9 +80,7 @@ p {
 .form-button {
   width: 100%;
   margin: 30px 7px 20px;
-  background-color: var(--button-color);
 }
-
 
 /*----------------------------------*/
 /*  Olisa Contact Section           */
@@ -93,7 +90,6 @@ p {
   background-color: rgb(169 169 169);
   color: var(--button-font);
 }
-
 
 /*----------------------------------*/
 /*             Header               */
@@ -590,26 +586,15 @@ section {
 /*               Contact                    */
 /*------------------------------------------*/
 
-
-.contact-section {
-  background-color: rgb(169 169 169);
-  color: var(--button-font);
-  height: 100%;
-}
-
 .contact-container {
   display: flex;
-  justify-content: space-around;
 }
 
 .contact-box {
   width: 50%;
 }
 
-
 .contact-info {
-  width: 50%;
-  display: flex;
   width: 50%;
   flex-wrap: wrap;
   align-content: center;
@@ -633,14 +618,10 @@ section {
   font-size: var(--font-size-medium);
   gap: 20px;
   margin-top: 20px;
-  width: 90%;
-
-
 }
 
 .contact-form {
   width: 40%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -648,7 +629,6 @@ section {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  margin: 20px 0;
 
   label {
     font-size: 16px;
@@ -675,7 +655,7 @@ section {
     background-color: #f3f5f7;
   }
 
-  input:not([type=submit]) {
+  input {
     font-size: 1.6rem;
     font-weight: 400;
     height: 4.8rem;
@@ -684,14 +664,6 @@ section {
     border: 0rem solid #ccc;
     border-radius: .4rem;
   }
-
-  .contact-info {
-    width: 100%;
-    text-align: center;
-    
-  }
-
-
 }
 
 input:focus, textarea:focus {
@@ -873,38 +845,33 @@ footer ul li a:hover {
     position: relative;
     left: 25%;
   }
-  
   .landing {
     background: transparent url(../img/bg1-mobile.jpg) no-repeat center center/cover;
   }
 
-  .contact-info {
-    flex: 0 0 calc(100%);
-    width: 100%;
+  .contact-container {
+    display: inline-block;
   }
-
-  .contact-box {
-    height: auto;
-    flex: 0 0 calc(100%);
-    width: 50%;
-    margin-bottom: 1000px;
-  }
-
   .contact-form {
     flex: 0 0 calc(100%);
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make the form take up the full width on small screens */
+    padding: 20px;
+    margin: 40px 0;
   }
 
-
-
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
 }
+
+
+
 
 /* contact section*/
 @media (max-width: 600px) {
   .contact-container {
     flex-direction: column;
-    height: auto;
   }
 
   .contact-form {
@@ -942,15 +909,4 @@ footer ul li a:hover {
 .center {
   align-content: center;
 }
-
-/*------------------------------------------*/
-/*   Responsiveness Contact                  */
-/*------------------------------------------*/
-
-
-@media(max-width: 480px) {
-
-
-}
-
 
