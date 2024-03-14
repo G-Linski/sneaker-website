@@ -59,6 +59,7 @@ p {
 }
 
 .button {
+  background-color: var(--button-color);
   display: block;
   height: 44px;
   width: 180px;
@@ -80,6 +81,7 @@ p {
 .form-button {
   width: 100%;
   margin: 30px 7px 20px;
+  background-color: var(--button-color);
 }
 
 /*----------------------------------*/
