@@ -6,17 +6,15 @@
 /*----------------------------------*/
 
 
-
-
 .detail-container {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   height: 450px;
 }
 
 .detail-picture { 
   width: 45%;
-  height:450px;
+  height: 450px;
   width: fit-content;
 
 
