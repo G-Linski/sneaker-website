@@ -728,6 +728,7 @@ footer {
 .footer-socialmedia:hover {
   color: #007bff;
   font-size: 22px;
+  cursor: pointer;
 }
 
 .footer-socialmedia li i {
