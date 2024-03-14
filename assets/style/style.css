@@ -137,6 +137,11 @@ nav ul li a:hover {
   gap: 30px;
 }
 
+span {
+  color: #007bff;
+}
+
+
 /*----------------------------------*/
 /*          Search                  */
 /*----------------------------------*/
@@ -814,6 +819,15 @@ footer ul li a:hover {
     height: 400px;
   }
   
+
+  /* Detail */
+  .demand-box {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    display: flex;
+  }
+
+
 
 }
 
