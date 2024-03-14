@@ -90,7 +90,7 @@ p {
 /*----------------------------------*/
 
 .contact-section {
-  background-color: rgb(169 169 169);
+  background-color: rgb(169 169 169 / 0.5);
   color: var(--button-font);
 }
 
@@ -745,7 +745,6 @@ footer ul li a:hover {
 }
 
 
-
 /*------------------------------------------*/
 /*             Responsiveness               */
 /*------------------------------------------*/
@@ -831,7 +830,6 @@ footer ul li a:hover {
 
 
   }
-  
 
   /* Detail */
   .demand-box {
@@ -842,7 +840,6 @@ footer ul li a:hover {
 }
 
 @media(max-width: 480px) {
-
   .landing {
     height: 600px;
   }
@@ -878,9 +875,6 @@ footer ul li a:hover {
     width: 100%;
     height: auto;
   }
-
-
-
 }
 
 /* contact section*/
@@ -924,16 +918,6 @@ footer ul li a:hover {
 
 .center {
   align-content: center;
-}
-
-/*------------------------------------------*/
-/*   Responsiveness Contact                  */
-/*------------------------------------------*/
-
-
-@media(max-width: 480px) {
-
-
 }
 
 
