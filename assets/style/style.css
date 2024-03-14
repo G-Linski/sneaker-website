@@ -694,7 +694,7 @@ footer {
   display: flex;
 }
 
-.footer-socialmedia li {
+.footer-socialmedia li i {
   color: var( --footer-font-color);
 }
 
@@ -703,6 +703,10 @@ footer ul li a {
   text-decoration: none;
   cursor: default;
   transition: color 0.25s ease-in-out;
+}
+
+footer .fa-brands {
+  color: var( --footer-font-color);
 }
 
 footer ul li a:hover {
