@@ -126,6 +126,7 @@
               <p>204-555-5555</p>
             </div>
           </div>
+
           <div class="contact-box contact-form">
             <p>Full Name</p>
             <input type="text" placeholder="" class="contact-name">
@@ -137,6 +138,24 @@
               Send message
             </a>
           </div>
+
+          <form class="contact-box contact-form">
+              <p>Full Name</p>
+              <p>Company</p>
+              <input type="text" class="contact-name" minlength="1" required>
+              <input type="text" class="contact-company">
+              <p>Email</p>
+              <p>Phone Number</p>
+              <input class="contact-email" type="email" maxlength="50" required
+              title="Email is required" pattern="^(?=^.{8,}$)[\-_A-Za-z0-9]+([\.\-_][a-zA-Z0-9]+)*@[A-Za-z0-9]+([\.\-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
+              <input type="text" class="contact-phone">
+              <p class="address-title">Address</p>
+              <input type="text" class="contact-address">
+              <p>Your Message</p>
+              <textarea required></textarea>
+              <input class="button form-button" type="submit" value="Send Message">
+          </form>
+
         </div>
       </section>
       <!-- Dialog -->
