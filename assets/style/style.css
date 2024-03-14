@@ -517,12 +517,19 @@ section {
 
 }
 
+
+/*------------------------------------------*/
+/*        About and Wallet                  */
+/*------------------------------------------*/
+
+
 .best-offer {
   background-color: rgb(131 131 131 / 0.025);
 }
 
 .best-offer-column-small {
   place-items: center;
+  display: flex;
   flex: 0 0 calc(30% - 15px);
   max-width: calc(30% - 15px);
 }
@@ -551,6 +558,11 @@ section {
   padding: 20px 0 30px;
 }
 
+.best-offer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 /*------------------------------------------*/
 /*               Contact                    */
@@ -845,11 +857,35 @@ footer button {
     max-width: 100%;
   }
 
+
+
+  /* Wallet and About Section */
+
+  .best-offer-row {
+    display: inline-block;
+    flex-wrap: none;
+  }
+  
+  .best-offer-column-big {
+    flex: 0 0 calc(100%);
+    max-width: 100%;
+  }
+
+  .best-offer-column-small {
+    flex: 0 0 calc(100%);
+    max-width: 100%;
+  }
+
+  .wallet-column-big {
+    flex: 0 0 calc(100%);
+    max-width: 100%;
+    height: 400px;
+  }
+  
+
 }
 
 @media(max-width: 480px) {
-
-
 
   .landing {
     height: 600px;
