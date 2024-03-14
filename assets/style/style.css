@@ -863,6 +863,14 @@ footer ul li a:hover {
     width: 100%;
     text-align: center;
   }
+
+  .form-button {
+    position: relative;
+    left: 2%;
+    width: 93%
+  }
+
+
 }
 
 
