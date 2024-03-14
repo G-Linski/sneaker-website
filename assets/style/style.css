@@ -80,6 +80,7 @@ p {
 
 .form-button {
   width: 40%;
+  margin: 30px 7px 20px;
 }
 
 /*----------------------------------*/
@@ -575,10 +576,11 @@ section {
 
 .contact-box {
   width: 50%;
-  height: 500px;
+  height: 400px;
 }
 
 .contact-info {
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -587,12 +589,13 @@ section {
 .contact-info {
   h2 {
   width:100%;
-  color: var(--font-color-main);
+  padding-bottom: 20px;
+  color: #fff;
   }
 
   p {
-    width:50%;
-    color: var(--font-color-main);
+    font-size: 18px;
+    color: #fff;
   }
 }
 
@@ -606,22 +609,28 @@ section {
 }
 
 .contact-form {
-  height: auto;
+  height: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   color: #666;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
 
   p {
+    font-size: 16px;
+    width: 45%;
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+
+  input {
     width: 45%;
     margin: 0 10px;
   }
 
-  input{
-    width: 45%;
-    margin: 0 10px;
-  }
-
-  .address-title{
+  .address-title {
     display: block;
   }
 
@@ -649,15 +658,14 @@ input:focus {
   border: 1px solid #0047ab;
 }
 
-.contact-form  .address-title{
-  width: 90%;
+.contact-form  .address-title {
+  width: 100%;
 }
 
 .contact-form  .contact-address {
   width: 100%;
 
 }
-
 
 /*------------------------------------------*/
 /*              Footer                      */
