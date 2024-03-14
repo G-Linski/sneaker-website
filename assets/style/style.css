@@ -725,6 +725,11 @@ footer {
   display: flex;
 }
 
+.footer-socialmedia:hover {
+  color: #007bff;
+  font-size: 22px;
+}
+
 .footer-socialmedia li i {
   color: var( --footer-font-color);
 }
