@@ -130,11 +130,12 @@
           <div class="contact-box contact-form">
             <p>Full Name</p>
             <p>Company</p>
-            <input type="text" placeholder="" class="contact-name">
+            <input type="text" placeholder="" class="contact-name" required>
             <input type="text" placeholder="" class="contact-company">
             <p>Email</p>
             <p>Phone Number</p>
-            <input type="text" placeholder="" class="contact-email">
+            <input class="contact-email" type="email" placeholder="" maxlength="50" required
+            title="Email is required" pattern="^(?=^.{8,}$)[\-_A-Za-z0-9]+([\.\-_][a-zA-Z0-9]+)*@[A-Za-z0-9]+([\.\-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
             <input type="text" placeholder="" class="contact-phone">
             <p class="address-title">Address</p>
             <input type="text" placeholder="" class="contact-address">
