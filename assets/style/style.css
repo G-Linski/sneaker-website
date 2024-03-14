@@ -30,6 +30,7 @@ html {
 body {
   background-color: var(--background-main);
   font-family: "Montserrat", sans-serif;
+  overflow: auto;
 }
 
 h1, h2, p, li, a {
@@ -150,11 +151,13 @@ nav ul li a:hover {
 }
 
 .search-input {
+  background-color: rgb(255 255 255 / 0.7);
+  color: #000;
   color: var(--font-color-main);
   transition: all 0.25s ease-in-out;
   height: 40px;
   font-size: 18px;
-  border-radius: 50px;
+  border-radius: 15px;
   z-index: 1;
   border: 1px solid rgb(255 255 255 /0.30);
 
@@ -164,23 +167,29 @@ nav ul li a:hover {
   width: 250px;
   height: 40px;
   line-height: 60px;
-  border-radius: 50px;
-  font-size: 20px;
+  border-radius: 15px;
+  font-size: 18px;
   font-weight: 500;
+  color: #000;
+  padding: 0 0 0 50px; 
   color: var( --font-color-main);
   padding: 0 0 0 60px; 
   transition: all 0.25s ease-in-out;
-  background: rgba(0, 0, 0, 0.1) url(../img/search-icon.png) no-repeat 10% 7px;
+  background: rgb(0 0 0 / 0.05) url(../img/search-icon.png) no-repeat 20px 9px;
+  background-size: 18px;
   border: 1px solid rgb(255 255 255 /0.30);
 
 }
 
 ::placeholder {
+  color: rgb(0 0 0 / 0.4);
+  padding: 10px 5px;
+  font-size: 18px;
   color: var( --font-color-main);
 }
 
-input[type=text]:focus {
-  border: 1px solid rgb(255 255 255 /0.30);
+.search-input[type=text]:focus {
+  border: 1px solid #0047ab;
 }
 
 
@@ -261,7 +270,7 @@ a:link, a:visited {
 /*------------------------------------------*/
 
 .overlay {
-  background: rgba(70, 70, 70, 0);
+  background: rgba(70, 70, 70, 0.7);
   position: fixed;
   z-index: 6666;
   top: 0;
@@ -290,7 +299,7 @@ a:link, a:visited {
   visibility: hidden;
   opacity: 0;
   transition: all 0.25s ease-in-out;
-  padding: 40px;
+  padding: 30px;
   color: #666;
 
   &.open {
@@ -331,9 +340,10 @@ a:link, a:visited {
 
   input[type=submit] {
       width: 100%;
+      background-color: #0f00ab;
       background-color: var(--button-hover-color);
       color: #fff;
-      margin: 20px 0 70px;
+      margin: 10px 0;
       border-radius: 10px;
       font-weight: 700;
   }
@@ -346,7 +356,7 @@ a:link, a:visited {
 .dialog .forgot {
   color: var(--button-hover-color);
   font-size: 16px;
-  margin: 40px 0;
+  margin: 10px 0;
 }
 
 button {
@@ -476,6 +486,37 @@ section {
   background-color: #b3e140;
 }
 
+@media (max-width: 925px) {
+  .product-box {
+    height: 350px;
+  }
+}
+
+@media (max-width: 725px) {
+  .product-box {
+    height: 250px;
+  }
+}
+
+@media (max-width: 525px) {
+  .product-box {
+    max-width: 100%;
+    flex: 0 0 100%;
+    height: 350px;
+
+    img {
+      width: 50%;
+    }
+
+    &:hover{
+      img {
+        width: 55%;
+      }
+    }
+  }
+
+}
+
 .best-offer {
   background-color: rgb(131 131 131 / 0.025);
 }
@@ -489,6 +530,12 @@ section {
 .best-offer-column-big {
   flex: 0 0 calc(70% - 15px);
   max-width: calc(70% - 15px);
+  height: 400px;
+}
+
+.wallet-column-big {
+  flex: 0 0 calc(70% - 15px);
+  max-width: calc(50% - 15px);
   height: 400px;
 }
 
@@ -586,8 +633,8 @@ section {
   }
 }
 
-input[type=text]:focus {
-  border: 1px solid rgb(255 255 255 /0.30);
+input:focus {
+  border: 1px solid #0047ab;
 }
 
 .contact-form  .address-title{
@@ -598,7 +645,6 @@ input[type=text]:focus {
   width: 100%;
 
 }
-
 
 
 /*------------------------------------------*/
@@ -838,4 +884,16 @@ footer button {
 
 .center {
   align-content: center;
+}
+
+/*------------------------------------------*/
+/*   Olisa Scroll Disable                   */
+/*------------------------------------------*/
+
+.scroll-disable {
+  overflow: hidden;
+}
+
+.scroll-enable {
+  overflow: auto;
 }
