@@ -5,4 +5,4 @@
 
 ## Authors
 
-Olisa, JJ, Clinton, Gabegit 
+Olisa, JJ, Clinton, Gabe
