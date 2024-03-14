@@ -113,6 +113,10 @@
   margin-top: 80px;
 }
 
+.product-price {
+  font-weight: 700;
+}
+
 .demand-column {
   flex: 0 0 calc(25% - 22.5px);
   max-width: calc(25% - 22.5px);
