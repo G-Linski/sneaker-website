@@ -78,6 +78,7 @@ p {
 .form-button {
   width: 100%;
   margin: 30px 7px 20px;
+  background-color: var(--button-color)  !important;
 }
 
 /*----------------------------------*/
@@ -859,6 +860,7 @@ footer ul li a:hover {
     position: relative;
     left: 2%;
     width: 93%
+    
   }
 }
 

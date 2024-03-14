@@ -127,17 +127,18 @@
             </div>
           </div>
 
-          <div class="contact-box contact-form">
+          <form class="contact-box contact-form">
             <label>Full Name</label>
-            <input type="text" placeholder="" class="contact-name">
+            <input type="text" placeholder="" class="contact-name" minlength="1" required>
             <label>Email</label>
-            <input type="text" placeholder="" class="contact-email">
+            <input type="email" placeholder="" class="contact-email" pattern="^(?=^.{8,}$)[\-_A-Za-z0-9]+([\.\-_][a-zA-Z0-9]+)*@[A-Za-z0-9]+([\.\-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
+
             <label>Your Message</label>
-            <textarea placeholder=""></textarea>
-            <a href="#" class="button form-button">
-              Send message
-            </a>
-          </div>
+ 
+            <textarea placeholder="" required></textarea>
+            <input class="button form-button" type="submit" value="Send Message">
+          </form>
+          </form>
         </div>
       </section>
       <!-- Dialog -->
