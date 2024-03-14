@@ -90,6 +90,7 @@ p {
 .contact-section {
   background-color: #000072;
   color: var(--button-font);
+  height: 100%;
 }
 
 /*----------------------------------*/
@@ -571,7 +572,6 @@ section {
 
 .contact-container {
   display: flex;
-  justify-content: space-around;
 }
 
 .contact-box {
@@ -580,7 +580,7 @@ section {
 }
 
 .contact-info {
-  width: 350px;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -588,7 +588,6 @@ section {
 
 .contact-info {
   h2 {
-  width:100%;
   padding-bottom: 20px;
   color: #fff;
   }
@@ -601,7 +600,6 @@ section {
 
 .icon-plus-text {
   display: flex;
-  width: 100%;
   line-height: 24px;
   font-size: var(--font-size-medium);
   gap: 20px;
@@ -654,7 +652,7 @@ section {
   }
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 1px solid #0047ab;
 }
 
@@ -734,7 +732,7 @@ footer ul li a:hover {
   }
 
   .header-bar {
-    display: inline-block;
+    display: block;
   }
 
   .search {
@@ -784,11 +782,6 @@ footer ul li a:hover {
 
 
   /* Wallet and About Section */
-
-  .best-offer-row {
-    display: inline-block;
-    flex-wrap: none;
-  }
   
   .best-offer-column-big {
     flex: 0 0 calc(100%);
@@ -796,6 +789,7 @@ footer ul li a:hover {
   }
 
   .best-offer-column-small {
+    text-align: center;
     flex: 0 0 calc(100%);
     max-width: 100%;
   }
@@ -844,6 +838,23 @@ footer ul li a:hover {
 
 .center {
   align-content: center;
+}
+
+/*------------------------------------------*/
+/*   Responsiveness Contact                  */
+/*------------------------------------------*/
+
+@media(max-width: 480px) {
+  .contact-info {
+    flex: 0 0 calc(100%);
+    width: 100%;
+  }
+
+  .contact-form {
+    flex: 0 0 calc(100%);
+    width: 100%;
+  }
+
 }
 
 /*------------------------------------------*/
