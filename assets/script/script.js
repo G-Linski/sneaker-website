@@ -1,11 +1,23 @@
 'use strict';
 
+/*
+    Utility Functions
+ */
+function query(selector){
+    return document.querySelector(selector);
+}
 
-const query = (selector) => document.querySelector(selector);
-const event = (on, evt, call) => on.addEventListener(evt, call);
-const toggle = (selector, cls, force) => query(selector).classList.toggle(cls, force);
-const body = document.querySelector('body');
-const overlay = document.querySelector('.overlay');
+function event(on, evt, call) {
+    on.addEventListener(evt,call);
+}
+
+function toggle(selector, cls, force){
+    query(selector).classList.toggle(cls, force);
+}
+
+/*
+    Main Functions
+*/
 
 function disableScroll() {
     body.classList.add('scroll-disable');
@@ -32,20 +44,19 @@ function createOverlay() {
     });
 }
 
-const login = query('ul.nav li:last-child > a');
-login.removeAttribute("target");
-login.addEventListener('click', () => {
-    toggleDialog();
-    disableScroll();
-});
-
+/*
+    Main
+*/
+const body = query('body');
+const overlay = query('.overlay');
 const signin = query('input[type="button"]');
 const email = query('input[type="email"]');
 const password = query('input[type="password"]');
 const form = query('form[name="signin"]');
-form.addEventListener("submit",()=>{
+form.addEventListener("submit",()=>toggleDialog());
+const login = query('ul.nav li:last-child > a');
+login.addEventListener('click', () => {
     toggleDialog();
+    disableScroll();
 });
-
 createOverlay();
-// toggleDialog();
