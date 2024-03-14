@@ -14,7 +14,7 @@
   --button-hover-color: #0047ab;
   --button-font: #ffffff;
 
-
+  --footer-font-color: #ffffff;
 
 }
 
@@ -99,6 +99,10 @@ h1 {
   text-align: left;
   line-height: 60px;
   font-size: var(--font-size-large);
+
+  span {
+    color: #007bff;
+  }
 }
 
 .header-bar{
@@ -513,12 +517,19 @@ section {
 
 }
 
+
+/*------------------------------------------*/
+/*        About and Wallet                  */
+/*------------------------------------------*/
+
+
 .best-offer {
   background-color: rgb(131 131 131 / 0.025);
 }
 
 .best-offer-column-small {
   place-items: center;
+  display: flex;
   flex: 0 0 calc(30% - 15px);
   max-width: calc(30% - 15px);
 }
@@ -547,6 +558,11 @@ section {
   padding: 20px 0 30px;
 }
 
+.best-offer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 /*------------------------------------------*/
 /*               Contact                    */
@@ -647,15 +663,14 @@ input:focus {
 /*              Footer                      */
 /*------------------------------------------*/
 
-/*footer {
-  background-color:#e7e6ec;
-  color: var(--font-color-main);
-  height: auto;
+footer {
+  background-color:#181720;
+  color: #ffffff;
+  height: 60px;
   font-weight: 600;
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
-  padding: 20px 0;
+  /* margin-top: 100px; */
 }
 
 .footer-copyright {
@@ -663,129 +678,38 @@ input:focus {
   text-decoration: none;
   line-height: 60px;
   list-style: none;
+
+}
+.footer-copyright li {
+  color: #ffffff;
 }
 
-.footer-socialmedia, .footer-links {
+
+.footer-socialmedia {
   font-size: 20px;
-  color: var(--font-color-main);
   line-height: 60px;
   list-style: none;
+  color: #ffffff;
   gap: 20px;
   display: flex;
-  flex-direction: column;
+}
+
+.footer-socialmedia li {
+  color: var( --footer-font-color);
 }
 
 footer ul li a {
+  color: var( --footer-font-color);
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   transition: color 0.25s ease-in-out;
-  color: var(--font-color-main);
 }
 
 footer ul li a:hover {
   color: #eaeaff;
 }
 
-footer form {
-  display: flex;
-  gap: 10px;
-}
 
-footer input[type="text"] {
-  padding: 5px;
-}
-
-footer button {
-  padding: 5px 10px;
-}*/
-
-.site-footer {
-  background-color: #929090; /*changed from black*/
-  /* color: #f0f0f0; */
-  color: var(--font-color-main);
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-section {
-  flex-basis: 40%;
-}
-
-.footer-section h4 {
-  margin-bottom: 15px;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-section ul li {
-  margin-right: 20px; /* Adjust as needed */
-}
-
-.footer-section ul li a {
-  color: var(--font-color-main);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-  color: #f0f0f0;
-}
-
-.footer-socialmedia {
-  font-size: var(--font-size-small);
-  color: var(--font-color-main);
-  line-height: 30px;
-  list-style: none;
-  gap: 10px;
-  display: flex;
-  flex-direction: row;
-}
-
-.newsletter-form {
-  display: flex;
-  margin-top: 15px;
-  font-display: #fff;
-}
-
-.newsletter-form input[type="email"] {
-  flex: 1;
-  padding: 10px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.newsletter-form button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--button-color);
-  color: var(--button-font);
-  cursor: pointer;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footer-bottom p {
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}
 
 /*------------------------------------------*/
 /*             Responsiveness               */
@@ -849,11 +773,35 @@ footer button {
     max-width: 100%;
   }
 
+
+
+  /* Wallet and About Section */
+
+  .best-offer-row {
+    display: inline-block;
+    flex-wrap: none;
+  }
+  
+  .best-offer-column-big {
+    flex: 0 0 calc(100%);
+    max-width: 100%;
+  }
+
+  .best-offer-column-small {
+    flex: 0 0 calc(100%);
+    max-width: 100%;
+  }
+
+  .wallet-column-big {
+    flex: 0 0 calc(100%);
+    max-width: 100%;
+    height: 400px;
+  }
+  
+
 }
 
 @media(max-width: 480px) {
-
-
 
   .landing {
     height: 600px;
