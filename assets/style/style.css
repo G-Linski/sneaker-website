@@ -87,9 +87,8 @@ p {
 /*----------------------------------*/
 
 .contact-section {
-  background-color: #000072;
+  background-color: rgb(169 169 169);
   color: var(--button-font);
-  height: 100%;
 }
 
 /*----------------------------------*/
@@ -596,8 +595,7 @@ section {
 }
 
 .contact-info {
-  width: 30%;
-  display: flex;
+  width: 50%;
   flex-wrap: wrap;
   align-content: center;
 }
@@ -623,8 +621,7 @@ section {
 }
 
 .contact-form {
-  width: 40%  ;
-  height: 100%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -633,7 +630,7 @@ section {
   padding: 20px;
   border-radius: 10px;
 
-  p {
+  label {
     font-size: 16px;
     margin: 0 10px;
     padding: 10px 0;
@@ -782,22 +779,22 @@ footer ul li a:hover {
   }
 
   .project-box:last-of-type {
-    flex: 0 0 calc(100%);
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   .about-picture {
-    flex: 0 0 calc(100%);
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   .about-text {
-    flex: 0 0 calc(100%);
+    flex: 0 0 100%;
     max-width: 100%;
   }
   
   .about-skills {
-    flex: 0 0 calc(100%);
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
@@ -806,18 +803,18 @@ footer ul li a:hover {
   /* Wallet and About Section */
   
   .best-offer-column-big {
-    flex: 0 0 calc(100%);
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   .best-offer-column-small {
     text-align: center;
-    flex: 0 0 calc(100%);
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   .wallet-column-big {
-    flex: 0 0 calc(100%);
+    flex: 0 0 100%;
     max-width: 100%;
     height: 400px;
 
@@ -831,9 +828,6 @@ footer ul li a:hover {
     max-width: calc(50% - 10px);
     display: flex;
   }
-
-
-
 }
 
 @media(max-width: 480px) {
@@ -864,9 +858,13 @@ footer ul li a:hover {
   }
 
   .contact-form {
-    flex: 0 0 calc(100%);
     width: 100%; /* Make the form take up the full width on small screens */
-    padding: 20px;
+    margin: 40px 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
   }
 }
   
@@ -898,17 +896,4 @@ footer ul li a:hover {
 /*------------------------------------------*/
 /*   Responsiveness Contact                  */
 /*------------------------------------------*/
-
-@media(max-width: 480px) {
-  .contact-info {
-    flex: 0 0 calc(100%);
-    width: 100%;
-  }
-
-  .contact-form {
-    flex: 0 0 calc(100%);
-    width: 100%;
-  }
-
-}
 
