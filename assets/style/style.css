@@ -137,7 +137,7 @@ nav ul li a:hover {
 
 .search-input {
   background-color: rgb(255 255 255 / 0.7);
-  color: black;
+  color: #000;
   transition: all 0.25s ease-in-out;
   height: 40px;
   font-size: 18px;
@@ -156,7 +156,7 @@ nav ul li a:hover {
   color: #000;
   padding: 0 0 0 50px; 
   transition: all 0.25s ease-in-out;
-  background: rgba(0, 0, 0, 0.1) url(../img/search-icon.png) no-repeat 20px 9px;
+  background: rgb(0 0 0 / 0.05) url(../img/search-icon.png) no-repeat 20px 9px;
   background-size: 18px;
   border: 1px solid rgb(255 255 255 /0.30);
 }
@@ -167,8 +167,8 @@ nav ul li a:hover {
   font-size: 18px;
 }
 
-input[type=text]:focus {
-  border: 1px solid rgb(255 255 255 /0.30);
+.search-input[type=text]:focus {
+  border: 1px solid #0047ab;
 }
 
 
@@ -277,7 +277,7 @@ a:link, a:visited {
   visibility: hidden;
   opacity: 0;
   transition: all 0.25s ease-in-out;
-  padding: 40px;
+  padding: 30px;
   color: #666;
 
   &.open {
@@ -404,6 +404,12 @@ section {
   height: 400px;
 }
 
+.wallet-column-big {
+  flex: 0 0 calc(70% - 15px);
+  max-width: calc(50% - 15px);
+  height: 400px;
+}
+
 .about-column-image {
   background: url('../img/about-section-image.png') center / cover no-repeat;
 }
@@ -498,8 +504,8 @@ section {
   }
 }
 
-input[type=text]:focus {
-  border: 1px solid rgb(255 255 255 /0.30);
+input:focus {
+  border: 1px solid #0047ab;
 }
 
 .contact-form  .address-title{
@@ -510,7 +516,6 @@ input[type=text]:focus {
   width: 100%;
 
 }
-
 
 
 /*------------------------------------------*/
