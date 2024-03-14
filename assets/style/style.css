@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
-  /* --background-dark: rgb(24,23,32); */
   --background-main: #f8f8f8;
   --background-sub: #ffffff;
   --font-color-main: #191821;
@@ -14,7 +13,6 @@
   --button-hover-color: #0047ab;
   --button-font: #ffffff;
   --footer-font-color: #ffffff;
-
 }
 
 html {
@@ -87,7 +85,7 @@ p {
 /*----------------------------------*/
 
 .contact-section {
-  background-color: rgb(169 169 169);
+  background-color: rgb(169 169 169 / 0.5);
   color: var(--button-font);
 }
 
@@ -145,14 +143,12 @@ span {
 /*          Search                  */
 /*----------------------------------*/
 
-
 .search {
   display: flex;
   align-items: center;
   justify-content: end;
   color: #808080;
   border: 1px solid rgb(255 255 255 /0.30);
-
 }
 
 .search-input {
@@ -165,7 +161,6 @@ span {
   border-radius: 15px;
   z-index: 1;
   border: 1px solid rgb(255 255 255 /0.30);
-
 }
 
 .search-input[type=text] {
@@ -195,7 +190,6 @@ span {
 .search-input[type=text]:focus {
   border: 1px solid #0047ab;
 }
-
 
 
 /*----------------------------------*/
@@ -263,7 +257,6 @@ button {
 
 button:hover {
   background-color: var(--button-color);
-  /* background-color: #00275f; */
 }
 
 a:link, a:visited {
@@ -528,7 +521,6 @@ section {
       }
     }
   }
-
 }
 
 
@@ -817,8 +809,6 @@ footer ul li a:hover {
     flex: 0 0 100%;
     max-width: 100%;
     height: 400px;
-
-
   }
   
 
@@ -852,6 +842,7 @@ footer ul li a:hover {
   .contact-container {
     display: inline-block;
   }
+
   .contact-form {
     flex: 0 0 calc(100%);
     width: 100%; /* Make the form take up the full width on small screens */
@@ -869,8 +860,6 @@ footer ul li a:hover {
     left: 2%;
     width: 93%
   }
-
-
 }
 
 
