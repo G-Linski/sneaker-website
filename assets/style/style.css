@@ -138,6 +138,11 @@ nav ul li a:hover {
   gap: 30px;
 }
 
+span {
+  color: #007bff;
+}
+
+
 /*----------------------------------*/
 /*          Search                  */
 /*----------------------------------*/
@@ -566,6 +571,10 @@ section {
   gap: 30px;
 }
 
+.product-space {
+  padding: 10px 0 10px;
+}
+
 /*------------------------------------------*/
 /*               Contact                    */
 /*------------------------------------------*/
@@ -700,7 +709,7 @@ footer {
   display: flex;
 }
 
-.footer-socialmedia li {
+.footer-socialmedia li i {
   color: var( --footer-font-color);
 }
 
@@ -709,6 +718,10 @@ footer ul li a {
   text-decoration: none;
   cursor: default;
   transition: color 0.25s ease-in-out;
+}
+
+footer .fa-brands {
+  color: var( --footer-font-color);
 }
 
 footer ul li a:hover {
@@ -801,6 +814,15 @@ footer ul li a:hover {
   }
   
 
+  /* Detail */
+  .demand-box {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    display: flex;
+  }
+
+
+
 }
 
 @media(max-width: 480px) {
@@ -815,6 +837,20 @@ footer ul li a:hover {
   }
 
 }
+
+/* contact section*/
+@media (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    flex: 0 0 calc(100%);
+    width: 100%; /* Make the form take up the full width on small screens */
+    padding: 20px;
+  }
+}
+  
 
 /*------------------------------------------*/
 /*              Utility                     */

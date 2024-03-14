@@ -8,15 +8,19 @@
     <meta name="keywords" content ="html, css, web, web development, javascript">
     <link rel = "icon" href ="./assets/img/favicon.png?v=2" type = "/x-icon">
     <title>Product</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/detail.css">
     <script src="./assets/script/script.js" defer></script>
   </head>
   <body>
     <header>
-      <div class ="container flex space-between">
+      <div class ="container header-bar space-between">
         <div>
-          <h1><a href="./index.html">Get your kicks</a></h1>
+          <h1><a href="./index.html">Get Your K<span>/</span>icks</a></h1>
         </div>
         <div class="search">
           <form>
@@ -27,7 +31,7 @@
           <ul class="nav flex">
             <li><a href="./detail.html">Sneakers</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#login">Login</a></li>
+            <li><a href="#login" class="login">Login</a></li>
           </ul>
         </nav>
       </div>
@@ -39,10 +43,11 @@
           <div class="best-offer-column-big about-column-image"></div>
           <div class="best-offer-column-small flex">
             <div>
-              <h2>Shoe description</h2>
+              <h2>Air Max 97 Retro</h2>
               <p>
-                This sneaker offers comfort and style 
+                The Air Max 97 Retro offers a Nice experience with premium stability, cushioning, flame-like caging, and airy mesh for a unique and stylish look 
               </p>
+              <h3 class="product-space">$145.00</h3>
               <a href="#" class="button">Add to cart</a>
             </div>
           </div>
@@ -50,20 +55,61 @@
       </section>
       <!--      /Description Section    -->
       <!--     Products on demand   -->
-      <section class="container products-demand">
-        <h2>Products on demand</h2>
-        <div class="demand-row row flex">
-          <div class="demand-column column demand-1"></div>
-          <div class="demand-column column demand-2"></div>
-          <div class="demand-column column demand-3"></div>
-          <div class="demand-column column demand-4"></div>
+     <section class="container products-demand">
+      <h2>Products on demand</h2>
+      <div class="demand-row">
+        <div class="demand-box">
+          <img src="./assets/img/demand-1.png">
+          <h2>G<span>/</span>abe</h2>
+          <p>$199</p>
         </div>
-     </section>
+
+        <div class="demand-box">
+          <img src="./assets/img/demand-2.png">
+          <h2>O<span>/</span>ilsa</h2>
+          <p>$255</p>
+        </div>
+
+        <div class="demand-box">
+          <img src="./assets/img/demand-3.jpg">
+          <h2>J<span>/</span>J</h2>
+          <p>$230</p>
+        </div>
+
+        <div class="demand-box">
+          <img src="./assets/img/demand-4.png">
+          <h2>C<span>/</span>linton</h2>
+          <p>$255</p>
+        </div>
+      </div>
+   </section>
       <!--    /Products on demand  -->
       <!-- Dialog -->
      <div class="dialog">
        <h2>Sign in</h2>
        <form name="signin" method="dialog">
+    </main>
+    <footer>
+      <div class="container flex space-between">
+        <div>
+          <ul class="footer-socialmedia">
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer-copyright">
+            <li>&#169;2024 by Olisa, JJ, Cliton, Gabe</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Dialog -->
+    <div class="dialog">
+      <h2>Sign in</h2>
+      <form name="signin" method="dialog">
         <label>Email</label>
         <input name="email" type="email" placeholder="" maxlength="50" required
             title="Email is required" pattern="^(?=^.{8,}$)[\-_A-Za-z0-9]+([\.\-_][a-zA-Z0-9]+)*@[A-Za-z0-9]+([\.\-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
