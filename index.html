@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/style.css">
-    <!--<link rel="stylesheet" href="./assets/style/contact.css"> -->
     <script src="./assets/script/script.js" defer></script>
   </head>
   <body>
@@ -111,7 +110,7 @@
      <!--      /Digital Wallet Section    -->
       <!-- Contact -->
       <section class="contact-section">
-        <div class="container contact-container">
+        <div class="container contact-container space-between">
           <div class="contact-box contact-info">
             <h2 class="contact-title">Contact Us</h2>
             <p>
@@ -146,6 +145,19 @@
           </div>
         </div>
       </section>
+      <!-- Dialog -->
+      <div class="dialog">
+        <h2>Sign in</h2>
+        <form name="signin" method="dialog">
+          <label>Email</label>
+          <input name="email" type="email" placeholder="" maxlength="50" required
+            title="Email is required" pattern="^(?=^.{8,}$)[\-_A-Za-z0-9]+([\.\-_][a-zA-Z0-9]+)*@[A-Za-z0-9]+([\.\-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
+          <label>Password</label>
+          <input name="password" type="password" placeholder="" minlength="6" required>
+          <p><a href="#">Forgot password?</a></p>
+          <input type="submit" value="Sign in">
+        </form>
+      </div>
     </main>
     <footer>
       <div class="container flex space-between">
@@ -164,19 +176,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- Dialog -->
-    <div class="dialog">
-      <h2>Sign in</h2>
-      <form name="signin" method="dialog">
-        <label>Email</label>
-        <input name="email" type="email" placeholder="" maxlength="50" required
-            title="Email is required" pattern="^(?=^.{8,}$)[\-_A-Za-z0-9]+([\.\-_][a-zA-Z0-9]+)*@[A-Za-z0-9]+([\.\-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$">
-        <label>Password</label>
-        <input name="password" type="password" placeholder="" minlength="6" required>
-        <p><a href="#" class="forgot">Forgot password?</a></p>
-        <input type="submit" value="Log in">
-      </form>
-    </div>
   </body>
 </html>
