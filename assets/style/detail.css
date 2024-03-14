@@ -76,6 +76,33 @@
   gap: 30px;
 }
 
+.demand-box{
+  flex: 0 0 calc(25% - 22.5px);
+  max-width: calc(25% - 22.5px);
+  display:flex;
+
+  i {
+    height:150px;
+    position: absolute;
+  }
+  h2 {
+    position: relative;
+    bottom:20%;
+  }
+  P {
+    position: relative;
+    bottom:18%;
+  }
+
+
+}
+
+.demand-row {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .column {
   height: 400px;
   border-radius: 15px;
@@ -89,10 +116,12 @@
   flex: 0 0 calc(25% - 22.5px);
   max-width: calc(25% - 22.5px);
   box-shadow: 1px;
+  flex-wrap: wrap;
 }
 
 .demand-1 {
   background: url('../img/demand-1.png') center / cover no-repeat;
+  
 }
 
 .demand-2 {
@@ -107,7 +136,16 @@
   background: url('../img/demand-4.png') center / cover no-repeat;
 }
 
-
+.demand-box {
+  display: flex;
+  flex-wrap: wrap;
+  h2 {
+    width:60%;
+  }
+  P {
+    width: 60%;
+  }
+}
 
 
 
